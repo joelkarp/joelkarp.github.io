@@ -1,0 +1,109 @@
+
+
+.ccm-itemverwaltung > .items{
+    margin-right: 25%;
+    margin-left: 20%;
+    margin-top:10%;
+    background-color: #2CA4E8;
+   
+    padding: 0.5em;
+    border-style: solid;
+    border-color: #2CA4E8;
+    border-width: 30px;
+    border-radius: 2em;
+    width: 50%;
+    
+}
+
+.ccm-itemverwaltung > .items > div >.name{
+    background-color: darkorange;
+}
+.ccm-itemverwaltung > .items > div >.nummer{
+    background-color: red;
+    width: 20 px;
+}
+
+
+.ccm-itemverwaltung > .items > div >.text{
+    background-color: darkorchid;
+}
+
+.ccm-itemverwaltung > .items > div >.datum{
+    background-color: #D2FF7C;
+}
+.ccm-itemverwaltung > .items > div >.erstdatum{
+    background-color: darkgray;
+    
+}
+
+.ccm-itemverwaltung >.items > .item {
+    margin: 5%;
+    
+    border-width: 20px;
+    border-color: #D2FF7C;
+    border-radius: 1em;
+    border-style: solid;
+    text-align: center;
+    vertical-align: middle;
+    
+}
+.ccm-itemverwaltung > .items > div >.name:hover{
+    background-color: white;
+}
+.ccm-itemverwaltung > .items > div >.nummer:hover{
+    background-color: white;
+    width: 20 px;
+}
+
+
+.ccm-itemverwaltung > .items > div >.text:hover{
+    background-color: white;
+}
+
+.ccm-itemverwaltung > .items > div >.datum:hover{
+    background-color: white;
+}
+.ccm-itemverwaltung > .items > div >.erstdatum:hover{
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

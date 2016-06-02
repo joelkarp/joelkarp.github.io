@@ -1,0 +1,148 @@
+
+
+{
+    "main":{
+        "tag":"div",
+        "class":"items"
+
+
+        },
+    
+    
+
+    
+    "item":{
+        "tag":"div",
+        "class":"item",
+        "inner":[
+            {
+                "tag":"div",
+                "class":"datum",
+                "inner":"%datum%"
+            },
+            {
+                "tag":"div",
+                "class":"name",
+                "inner":"%name%"
+            },
+            {
+                "tag":"div",
+                "class":"nummer",
+                "inner":"%nummer%"
+            },
+            {
+                "tag":"div",
+                "class":"text",
+                "inner":"%text%"
+            },{
+                "tag":"div",
+                "class":"erstdatum",
+                "inner":"%erstdatum%"
+            }
+        
+        ]
+    },
+    
+    "neuesItem":{
+        "tag":"div",
+        "class":"new_item",
+        "inner":[
+            {
+                "tag":"div",
+                "class":"name"
+            },
+            {
+                "tag":"div",
+                "class":"text1",
+                "inner":[
+                 
+                    {
+                        "tag":"form",
+                        "inner":[
+                            
+                        
+                         
+                            {
+                                "tag":"input",
+                                "class":"neuesItem",
+                                "placeholder":"enter item"
+                            },{
+                                "tag":"input",
+                                "class":"datumi",
+                                "placeholder":"datum"
+                            },
+                            {
+                                "tag":"input",
+                                "class":"button",
+                                "type":"submit",
+                                "value":"send"
+                                
+                                
+                            }
+                        ],
+                        "onsubmit":"%onsubmit%"
+                    }
+                    
+                ]
+            }
+        
+        ]
+    },
+    "loeschen":{
+        "tag":"div",
+        "class":"item_loeschen",
+        "inner": [
+            {
+                "tag":"div",
+                "class":"name"
+            },
+            {
+                "tag":"div",
+                "class":"text1",
+                "inner":[
+                    
+                {   
+                    "tag":"form",
+                    "inner":[
+                        {
+                            "tag":"input",
+                            "class":"loescheni",
+                            "placeholder":"nummer zu loeschen"
+                        },
+                        {
+                            "tag":"input",
+                            "class":"button",
+                            "type":"submit",
+                            "value":"send"
+                        }
+                    ],
+                    "onsubmit":"%onsubmit%"
+
+                }
+                ]
+            
+            
+            }
+        ]
+
+    }
+    
+}
+
+
+
+
+
+      
+
+
+
+
+
+
+
+
+
+
+
+
