@@ -46,10 +46,10 @@ ccm.component({
                       
                         datum: ccm.helper.val( item.datum ),
                         name:"Autor: "+ ccm.helper.val( item.user ),
-                        nummer:"nummer zum löschen: "+ ccm.helper.val(i),
+                        nummer:"Nummer um zu Löschen: "+ ccm.helper.val(i),
                         text: ccm.helper.val( item.text ),
                        
-                        erstdatum: ("erstelldatum: "+ccm.helper.val(item.erstdatum))
+                        erstdatum: ("Erstelldatum: "+ccm.helper.val(item.erstdatum))
                         
                     }))};
                 }//for ende

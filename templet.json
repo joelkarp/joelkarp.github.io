@@ -69,13 +69,13 @@
                             },{
                                 "tag":"input",
                                 "class":"datumi",
-                                "placeholder":"datum"
+                                "placeholder":"Datum"
                             },
                             {
                                 "tag":"input",
                                 "class":"button",
                                 "type":"submit",
-                                "value":"speichern"
+                                "value":"Speichern"
                                 
                                 
                             }
@@ -107,7 +107,7 @@
                         {
                             "tag":"input",
                             "class":"loescheni",
-                            "placeholder":"nummer zu loeschen"
+                            "placeholder":"Löschen"
                         },
                         {
                             "tag":"input",
