@@ -1,5 +1,6 @@
 
 
+
 .ccm-itemverwaltung > .items{
     margin-right: 25%;
     margin-left: 20%;
@@ -17,22 +18,26 @@
 
 .ccm-itemverwaltung > .items > div >.name{
     background-color: darkorange;
+    padding: 6px;
 }
 .ccm-itemverwaltung > .items > div >.nummer{
     background-color: red;
-    width: 20 px;
+    padding: 6px;
 }
 
 
 .ccm-itemverwaltung > .items > div >.text{
     background-color: darkorchid;
+    padding: 6px;
 }
 
 .ccm-itemverwaltung > .items > div >.datum{
     background-color: #D2FF7C;
+    padding: 6px;
 }
 .ccm-itemverwaltung > .items > div >.erstdatum{
-    background-color: darkgray;
+    background-color: #60FF63;
+    padding: 6px;
     
 }
 
@@ -67,23 +72,77 @@
     background-color: white;
 }
 
+.ccm-itemverwaltung > div > div >div >form {
+    margin-left: 10%;
+    margin-right: 10%;
+    border-width:20px;
+
+}
 
 
+.ccm-itemverwaltung > div > div >div >form >.button{
+    background-color: white;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+    border-radius: 5px;
+    margin:4%;
+    
+}
+.ccm-itemverwaltung > div > div >div >form >.button:hover{
+    background-color: #2CA4E8;
+    color: white;
+    border-color:#2CA4E8;
+    
+    
+}
+.ccm-itemverwaltung > div > div >div >form >.neuesItem{
+    margin: 3%;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 10px;
+    border-color:white;
+}
+
+.ccm-itemverwaltung > div > div >div >form >.datumi{
+    margin: 3%;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 10px;
+    border-color:white;
+}
+.ccm-itemverwaltung > div > div >div >form >.neuesItem:hover{
+    background-color: #2CA4E8;
+    color: white;
+    border-color:#2CA4E8;
+    
+}
+
+.ccm-itemverwaltung > div > div >div >form >.datumi:hover{
+    background-color: #2CA4E8;
+    color: white;
+    border-color:#2CA4E8;
+    
+    
+    
+    
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+.ccm-itemverwaltung >div>div>div>form>.loescheni{
+        margin: 3%;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 10px;
+    border-color:white;
+}
+.ccm-itemverwaltung >div>div>div>form>.loescheni:hover{
+    background-color: #2CA4E8;
+    color: white;
+    border-color:#2CA4E8;
+    
+  
+}
 
 
 

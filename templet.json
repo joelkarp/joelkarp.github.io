@@ -49,7 +49,7 @@
         "inner":[
             {
                 "tag":"div",
-                "class":"name"
+                "class":"name1"
             },
             {
                 "tag":"div",
@@ -65,7 +65,7 @@
                             {
                                 "tag":"input",
                                 "class":"neuesItem",
-                                "placeholder":"enter item"
+                                "placeholder":"Beschreibung"
                             },{
                                 "tag":"input",
                                 "class":"datumi",
@@ -75,7 +75,7 @@
                                 "tag":"input",
                                 "class":"button",
                                 "type":"submit",
-                                "value":"send"
+                                "value":"speichern"
                                 
                                 
                             }
@@ -94,7 +94,7 @@
         "inner": [
             {
                 "tag":"div",
-                "class":"name"
+                "class":"name1"
             },
             {
                 "tag":"div",
@@ -113,7 +113,7 @@
                             "tag":"input",
                             "class":"button",
                             "type":"submit",
-                            "value":"send"
+                            "value":"Löschen!"
                         }
                     ],
                     "onsubmit":"%onsubmit%"
