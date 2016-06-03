@@ -9,7 +9,7 @@ ccm.component({
         
         html:[ ccm.store,{local:'templet.json'}],
         key : 'itemtestverwaltungmitdatumunderstelldatum',
-        store: [ccm.store,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }],
+        store: [ccm.store/*,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }*/],
         style: [ccm.load,'style.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js']
     },
