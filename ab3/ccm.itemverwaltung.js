@@ -9,7 +9,7 @@ ccm.component({
 
         html:[ ccm.store,{local:'templet.json'}],
         key : 'itemtestverwaltungmitdatumunderstelldatum',
-        store: [ccm.store/*,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }*/],
+        store: [ccm.store,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }],
         style: [ccm.load,'style.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js'],
         icons: [ ccm.load, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'  ]
@@ -90,7 +90,7 @@ ccm.component({
 
                   datum: ccm.helper.val( item.datum ),
                   name:"Autor: "+ ccm.helper.val( item.user ),
-                  
+
                   text: ccm.helper.val( item.text ),
                   click:  function(){
                       removeItem(i);
@@ -113,11 +113,11 @@ ccm.component({
 
     };
 
-    self.getDate = function(){
-      var date = new Date();
+  self.getDate = function(){
+  var date = new Date();
 	var stunden = date.getHours();
 	var minuten = date.getMinutes();
-    var seconde = date.getSeconds();
+  var seconde = date.getSeconds();
 	var tag = date.getDate();
 	var monatDesJahres = date.getMonth();
 	var jahr = date.getFullYear();

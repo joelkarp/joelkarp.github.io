@@ -151,6 +151,11 @@
   background-color: #D2FF7C;
 
 }
+.fa-close:hover{
+color: blue;
+
+
+}
 .ccm-itemverwaltung > .items > div {
     background-color: #D2FF7C;
     padding: 6px;
