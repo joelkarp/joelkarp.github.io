@@ -7,14 +7,20 @@
 
 
         },
-    
-    
 
-    
+
+
+
     "item":{
         "tag":"div",
         "class":"item",
-        "inner":[
+        "inner":[{
+
+              "tag":"buttun",
+              "class":"fa fa-close",
+              "onclick":"%click%"
+
+            },
             {
                 "tag":"div",
                 "class":"datum",
@@ -27,11 +33,6 @@
             },
             {
                 "tag":"div",
-                "class":"nummer",
-                "inner":"%nummer%"
-            },
-            {
-                "tag":"div",
                 "class":"text",
                 "inner":"%text%"
             },{
@@ -39,10 +40,10 @@
                 "class":"erstdatum",
                 "inner":"%erstdatum%"
             }
-        
+
         ]
     },
-    
+
     "neuesItem":{
         "tag":"div",
         "class":"new_item",
@@ -55,13 +56,13 @@
                 "tag":"div",
                 "class":"text1",
                 "inner":[
-                 
+
                     {
                         "tag":"form",
                         "inner":[
-                            
-                        
-                         
+
+
+
                             {
                                 "tag":"input",
                                 "class":"neuesItem",
@@ -76,73 +77,17 @@
                                 "class":"button",
                                 "type":"submit",
                                 "value":"Speichern"
-                                
-                                
+
+
                             }
                         ],
                         "onsubmit":"%onsubmit%"
                     }
-                    
+
                 ]
             }
-        
-        ]
-    },
-    "loeschen":{
-        "tag":"div",
-        "class":"item_loeschen",
-        "inner": [
-            {
-                "tag":"div",
-                "class":"name1"
-            },
-            {
-                "tag":"div",
-                "class":"text1",
-                "inner":[
-                    
-                {   
-                    "tag":"form",
-                    "inner":[
-                        {
-                            "tag":"input",
-                            "class":"loescheni",
-                            "placeholder":"Löschen"
-                        },
-                        {
-                            "tag":"input",
-                            "class":"button",
-                            "type":"submit",
-                            "value":"Löschen!"
-                        }
-                    ],
-                    "onsubmit":"%onsubmit%"
 
-                }
-                ]
-            
-            
-            }
         ]
-
     }
-    
+
 }
-
-
-
-
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
