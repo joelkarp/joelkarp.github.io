@@ -39,6 +39,10 @@
                 "tag":"div",
                 "class":"erstdatum",
                 "inner":"%erstdatum%"
+            },{
+              "tag":"div",
+              "class":"fa fa-arrow-up",
+              "onclick":"%upclick%"
             }
 
         ]

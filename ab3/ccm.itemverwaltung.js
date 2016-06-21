@@ -9,7 +9,7 @@ ccm.component({
 
         html:[ ccm.store,{local:'templet.json'}],
         key : 'itemtestverwaltungmitdatumunderstelldatum',
-        store: [ccm.store,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }],
+        store: [ccm.store/*,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }*/],
         style: [ccm.load,'style.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js'],
         icons: [ ccm.load, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'  ]
@@ -83,6 +83,27 @@ ccm.component({
 
 
             }
+
+            function upItem(index){
+                if(i-1<0){
+                    return;
+
+                }
+                var tmp1 = dataset.items[i];
+                console.log(tmp1);
+                var tmp2 = dataset.items[i-1];
+                console.log(tmp2);
+
+
+                dataset.items[i]=tmp2;
+                console.log("acndataset.items[i]);
+                dataset.items[i-1]=tmp1;
+                console.log(dataset.items[i-1]);
+                self.store.set(dataset, function () { self.render();});
+
+            }
+
+
             function addItem(i){
               var   item = dataset.items[i];
               if(item!==null){
@@ -95,7 +116,11 @@ ccm.component({
                   click:  function(){
                       removeItem(i);
                   },
-                  erstdatum: ("Erstelldatum: "+ccm.helper.val(item.erstdatum))
+                  erstdatum: ("Erstelldatum: "+ccm.helper.val(item.erstdatum)),
+                  upclick: function () {
+                    upItem(i);
+
+                  }
 
               }))};
 
