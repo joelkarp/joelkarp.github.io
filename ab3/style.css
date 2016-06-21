@@ -4,7 +4,7 @@
 .ccm-itemverwaltung > .items{
     margin-right: 25%;
     margin-left: 20%;
-    margin-top:10%;
+    margin-top:20%;
     background-color: #2CA4E8;
 
     padding: 0.5em;
@@ -164,6 +164,19 @@
   color: white;
 
 
+}
+
+.e{
+  background-color: blue;
+  width: 100%;
+  height: 20%;
+}
+.bild{
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  width: 250px;
+  height: 250px;
 }
 
 .ccm-itemverwaltung > .items > div {

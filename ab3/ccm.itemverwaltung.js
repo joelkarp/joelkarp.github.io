@@ -40,9 +40,20 @@ ccm.component({
                 var item_div= ccm.helper.find(self,'.items');
                // var item;
 
+               //test
+               var einhorndiv = ccm.helper.find(self,'.items');
+               einhorndiv.append(ccm.helper.html(self.html.get('einhorn')));
+
+               //test ende
+
+
+
                 for(var i=0; i < dataset.items.length ; i++ ){
                      addItem(i);
                 }//for ende
+
+
+
 
                 item_div.append(ccm.helper.html(self.html.get('neuesItem'),{onsubmit: function(){
 
@@ -72,7 +83,7 @@ ccm.component({
 
                 }}));
 
-                jqu();
+                jqu(0);
             if ( callback ) callback();
 
             function removeItem(index){
@@ -83,13 +94,45 @@ ccm.component({
 
 
             }
-            function jqu(){
+            function jqu(x){
 
-              $('.button').mouseover(
-                function(){
-                console.log("mous is over");
-                }
-              );
+
+
+
+
+
+              if((x%4)==0){
+                //rechtsbewegung
+              $('.bild').animate({
+                left:'+='+80+'%',
+
+
+              },10000);
+            }else if((x%4)==1){
+              $('.bild').animate({
+                top:'+='+100+'%'
+
+              },10000);
+
+            }else if((x%4)==2){
+              //linksbewegung
+              $('.bild').animate({
+                left:'-='+80+'%'
+
+              },10000);
+
+            }else{
+              //top
+              $('.bild').animate({
+                top:'-='+100+'%'
+
+              },10000);
+            }
+
+
+            x=x+1;
+
+            setTimeout(function(){ jqu(x) },15000);
 
 
 
