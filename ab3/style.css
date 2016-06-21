@@ -152,10 +152,20 @@
 
 }
 .fa-close:hover{
-color: blue;
+  color: blue;
+}
+
+.fa-arrow-up{
+  color: blue;
 
 
 }
+.fa-arrow-up:hover{
+  color: white;
+
+
+}
+
 .ccm-itemverwaltung > .items > div {
     background-color: #D2FF7C;
     padding: 6px;
