@@ -77,7 +77,7 @@ ccm.component({
 
             function removeItem(index){
 
-                dataset.items.splice(i-1,1);
+                dataset.items.splice(index-1,1);
                 self.store.set(dataset, function () { self.render();});
 
 
@@ -85,27 +85,32 @@ ccm.component({
             }
 
             function upItem(index){
-                if(i-1<0){
+                if(index-1<0){
                     return;
 
                 }
-                var tmp1 = dataset.items[i];
-                console.log(tmp1);
-                var tmp2 = dataset.items[i-1];
-                console.log(tmp2);
-
-
-                dataset.items[i]=tmp2;
-                console.log("acndataset.items[i]);
-                dataset.items[i-1]=tmp1;
-                console.log(dataset.items[i-1]);
+        
+                console.log("dataset an der i stelle:"+index+"wert:"+dataset.items[index]);
+                console.log("dataset an der i-1 stelle:"+index-1+"wert:"+dataset.items[index-1]);
+                
+                var tmp=dataset.items[index];
+ 
+                dataset.items[index]=dataset.items[index-1];
+                dataset.items[index-1]=tmp;
+              
+                console.log("dataset an der i stelle:"+index+"wert:"+dataset.items[index]);
+                console.log("dataset an der i-1 stelle:"+index-1+"wert:"+dataset.items[index-1]);
+                
+                
+                console.log(dataset.items[index-1]);
                 self.store.set(dataset, function () { self.render();});
-
+           
             }
 
 
             function addItem(i){
               var   item = dataset.items[i];
+            console.log(item);
               if(item!==null){
               item_div.append( ccm.helper.html( self.html.get( 'item' ),{
 
@@ -123,7 +128,7 @@ ccm.component({
                   }
 
               }))};
-
+                
 
             }
 
@@ -138,11 +143,11 @@ ccm.component({
 
     };
 
-  self.getDate = function(){
-  var date = new Date();
+    self.getDate = function(){
+    var date = new Date();
 	var stunden = date.getHours();
 	var minuten = date.getMinutes();
-  var seconde = date.getSeconds();
+    var seconde = date.getSeconds();
 	var tag = date.getDate();
 	var monatDesJahres = date.getMonth();
 	var jahr = date.getFullYear();
@@ -173,11 +178,4 @@ ccm.component({
     }
 });
 
-/*
-messages=items
-message=item
-name=name
-text=text
-input=neuesItem
-new_message=new_item
-*/
+
