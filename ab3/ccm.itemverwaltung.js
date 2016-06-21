@@ -72,13 +72,25 @@ ccm.component({
 
                 }}));
 
-
+                jqu();
             if ( callback ) callback();
 
             function removeItem(index){
 
                 dataset.items.splice(index,1);
                 self.store.set(dataset, function () { self.render();});
+
+
+
+            }
+            function jqu(){
+
+              $('.button').mouseover(
+                function(){
+                console.log("mous is over");
+                }
+              );
+
 
 
 
