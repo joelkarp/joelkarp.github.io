@@ -24,7 +24,6 @@ ccm.component({
         };
 
 
-
         self.render = function(callback){
 
             var element = ccm.helper.element( self );
@@ -46,13 +45,9 @@ ccm.component({
 
                //test ende
 
-
-
                 for(var i=0; i < dataset.items.length ; i++ ){
                      addItem(i);
                 }//for ende
-
-
 
 
                 item_div.append(ccm.helper.html(self.html.get('neuesItem'),{onsubmit: function(){
@@ -88,18 +83,25 @@ ccm.component({
 
             function removeItem(index){
 
+              self.user.login(function(){
+
+                if(dataset.items[index].user===self.user.data().key){
+
+
                 dataset.items.splice(index,1);
                 self.store.set(dataset, function () { self.render();});
 
+              }else{
+
+                console.log("nicht richtig");
+              }
+              }
+            );
 
 
             }
+
             function jqu(x){
-
-
-
-
-
 
               if((x%4)==0){
                 //rechtsbewegung
@@ -134,9 +136,6 @@ ccm.component({
 
             setTimeout(function(){ jqu(x) },15000);
 
-
-
-
             }
 
             function upItem(index){
@@ -162,7 +161,6 @@ ccm.component({
 
             }
 
-
             function addItem(i){
               var   item = dataset.items[i];
             console.log(item);
@@ -184,18 +182,11 @@ ccm.component({
 
               }))};
 
-
             }
 
             }
-
 
         });
-
-
-
-
-
     };
 
     self.getDate = function(){
@@ -221,14 +212,8 @@ ccm.component({
 
     }
 
-
-
         return datum;
     };
-
-
-
-
 
     }
 });
