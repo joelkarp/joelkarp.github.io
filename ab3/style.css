@@ -88,6 +88,7 @@
     border-radius: 5px;
     margin:4%;
 
+
 }
 .ccm-itemverwaltung > div > div >div >form >.button:hover{
     background-color: #2CA4E8;
@@ -129,30 +130,16 @@
 }
 
 
-.ccm-itemverwaltung >div>div>div>form>.loescheni{
-        margin: 3%;
-    border-style: solid;
-    border-width: 7px;
-    border-radius: 10px;
-    border-color:white;
-}
-.ccm-itemverwaltung >div>div>div>form>.loescheni:hover{
-    background-color: #2CA4E8;
-    color: white;
-    border-color:#2CA4E8;
-
-
-}
-
 .fa-close{
   color: red;
   margin-left: 90%;
   font-size: 40px;
-  background-color: #D2FF7C;
+  background-color: none;
 
 }
 .fa-close:hover{
-  color: blue;
+  color: white;
+  background-color:red;
 }
 
 .fa-arrow-up{

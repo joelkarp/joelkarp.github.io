@@ -26,7 +26,7 @@
         "class":"item",
         "inner":[{
 
-              "tag":"buttun",
+              "tag":"button",
               "class":"fa fa-close",
               "onclick":"%click%"
 
@@ -74,14 +74,17 @@
                     {
                         "tag":"form",
                         "inner":[
+                            {
+                              "tag":"input",
 
-
-
+                              "id":"datepicker"
+                            },
                             {
                                 "tag":"input",
                                 "class":"neuesItem",
                                 "placeholder":"Beschreibung"
-                            },{
+                            },
+                            {
                                 "tag":"input",
                                 "class":"datumi",
                                 "placeholder":"Datum"
@@ -91,8 +94,6 @@
                                 "class":"button",
                                 "type":"submit",
                                 "value":"Speichern"
-
-
                             }
                         ],
                         "onsubmit":"%onsubmit%"
