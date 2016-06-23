@@ -76,19 +76,16 @@
                         "inner":[
                             {
                               "tag":"input",
-
-                              "id":"datepicker"
+                              "class":"datapicker",
+                              "id":"datepicker",
+                              "placeholder":"datum"
                             },
                             {
                                 "tag":"input",
                                 "class":"neuesItem",
                                 "placeholder":"Beschreibung"
                             },
-                            {
-                                "tag":"input",
-                                "class":"datumi",
-                                "placeholder":"Datum"
-                            },
+
                             {
                                 "tag":"input",
                                 "class":"button",
