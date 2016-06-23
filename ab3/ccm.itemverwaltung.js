@@ -12,7 +12,8 @@ ccm.component({
         store: [ccm.store,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }],
         style: [ccm.load,'style.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js'],
-        icons: [ ccm.load, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'  ]
+        icons: [ ccm.load, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'  ],
+        ui:[ ccm.load, 'http://code.jquery.com/ui/1.11.4/jquery-ui.js']
     },
     Instance: function(){
 
@@ -54,11 +55,14 @@ ccm.component({
 
                     var value = ccm.helper.val( ccm.helper.find( self, '.neuesItem' ).val() ).trim();
 
-                    var value2 = ccm.helper.val( ccm.helper.find( self, '.datumi' ).val() ).trim();
+                    var value2 =$("#datepicker").val();
+
+                
+                    console.log(value2);
 
                     var datume =  self.getDate().trim();
 
-                    console.log(datume);
+
 
 
                     if ( value === ''||value2==='' ){
@@ -78,9 +82,11 @@ ccm.component({
 
                 }}));
 
-                jqu(0);
+              //  jqu(0);
 
-
+              $(function () {
+                $("#datepicker").datepicker();
+              });
 
             if ( callback ) callback();
 
@@ -91,12 +97,13 @@ ccm.component({
                 if(dataset.items[index].user===self.user.data().key){
 
 
+
                 dataset.items.splice(index,1);
                 self.store.set(dataset, function () { self.render();});
 
               }else{
-                alert("falscher user");
-                console.log("nicht richtig");
+                alert("du kannst nur deine eigenen daten löschen");
+
               }
               }
             );
