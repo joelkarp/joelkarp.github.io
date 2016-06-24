@@ -6,7 +6,7 @@ ccm=document.createElement('script');ccm.setAttribute('src','https://kaul.inf.h-
 // google.de
 ccm.render('http://akless.github.io/ccm-developer/resources/chat/ccm.chat.js',{element:$('#lga')});
 // tagesschau.de
-ccm.render('http://mutex.fail/jk.ccm.itemverwaltung.js',{element:$('.subnavi')});*/
+ccm.render('http://akless.github.io/ccm-developer/resources/chat/ccm.chat.js',{element:$('.subnavi')});*/
 
 ccm.component({
 
@@ -46,11 +46,11 @@ ccm.component({
                 element.html( ccm.helper.html( self.html.get( 'main' ) ) );
                 var item_div= ccm.helper.find(self,'.items');
 
+                
 
-                /*
                var einhorndiv = ccm.helper.find(self,'.items');
                einhorndiv.append(ccm.helper.html(self.html.get('einhorn')));
-               */
+
 
 
                 for(var i=0; i < dataset.items.length ; i++ ){
@@ -89,7 +89,7 @@ ccm.component({
 
                 }}));
 
-                //jqu(0);
+                jqu(0);
 
               $(function () {
                 $("#datepicker").datepicker();

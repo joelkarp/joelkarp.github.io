@@ -2,9 +2,9 @@
 
 
 .ccm-itemverwaltung > .items{
-    margin-right: 25%;
-    margin-left: 20%;
-    margin-top:20%;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top:1%;
     background-color: #2CA4E8;
 
     padding: 0.5em;
@@ -12,7 +12,7 @@
     border-color: #2CA4E8;
     border-width: 30px;
     border-radius: 2em;
-    width: 50%;
+    width: 80%;
 
 }
 
@@ -133,7 +133,7 @@
 .fa-close{
   color: red;
   margin-left: 90%;
-  font-size: 40px;
+  font-size: 15px;
   background-color: none;
 
 }
@@ -158,13 +158,14 @@
   width: 100%;
   height: 20%;
 }
+/*
 .bild{
   position: absolute;
   left: 1%;
   top: 1%;
   width: 250px;
   height: 250px;
-}
+}*/
 
 .ccm-itemverwaltung > .items > div {
     background-color: #D2FF7C;

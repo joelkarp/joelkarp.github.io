@@ -13,7 +13,7 @@ ccm.callback["templet.json"](
         "inner":[{
             "tag":"img",
             "class":"bild",
-            "src":"dasdickeinhorn.jpg"
+            "src":"http://mutex.fail/jk/dasdickeinhorn.jpg"
           }]
 
       },
