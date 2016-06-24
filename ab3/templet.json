@@ -1,5 +1,5 @@
 
-
+ccm.callback["templet.json"](
 {
     "main":{
         "tag":"div",
@@ -103,3 +103,4 @@
     }
 
 }
+);

@@ -7,10 +7,10 @@ ccm.component({
 
     config: {
 
-        html:[ ccm.store,{local:'templet.json'}],
+        html:[ ccm.store,{local:'http://mutex.fail/jk/templet.json'}],
         key : 'itemtestverwaltungmitdatumundloeschen',
         store: [ccm.store,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }],
-        style: [ccm.load,'style.css'],
+        style: [ccm.load,'http://mutex.fail/jk/style.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js'],
         icons: [ ccm.load, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'  ],
         ui:[ ccm.load, 'http://code.jquery.com/ui/1.11.4/jquery-ui.js']
@@ -39,11 +39,11 @@ ccm.component({
                 element.html( ccm.helper.html( self.html.get( 'main' ) ) );
                 var item_div= ccm.helper.find(self,'.items');
 
-
+                /*
 
                var einhorndiv = ccm.helper.find(self,'.items');
                einhorndiv.append(ccm.helper.html(self.html.get('einhorn')));
-
+*/
 
 
                 for(var i=0; i < dataset.items.length ; i++ ){
@@ -57,7 +57,7 @@ ccm.component({
 
                     var value2 =$("#datepicker").val();
 
-                
+
                     console.log(value2);
 
                     var datume =  self.getDate().trim();
