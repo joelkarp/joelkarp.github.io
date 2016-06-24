@@ -1,5 +1,12 @@
 
-
+/*// jQuery
+window.jQuery=document.createElement('script');window.jQuery.setAttribute('src','https://code.jquery.com/jquery-2.1.4.min.js');document.head.appendChild(window.jQuery);
+// ccm
+ccm=document.createElement('script');ccm.setAttribute('src','https://kaul.inf.h-brs.de/ccm/ccm.js');document.head.appendChild(ccm);
+// google.de
+ccm.render('http://akless.github.io/ccm-developer/resources/chat/ccm.chat.js',{element:$('#lga')});
+// tagesschau.de
+ccm.render('http://akless.github.io/ccm-developer/resources/chat/ccm.chat.js',{element:$('.subnavi')});*/
 
 ccm.component({
 
