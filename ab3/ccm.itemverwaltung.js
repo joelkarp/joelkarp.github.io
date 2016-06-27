@@ -14,10 +14,10 @@ ccm.component({
 
     config: {
 
-        html:[ ccm.store,{local:'http://mutex.fail/jk/templet.json'}],
+        html:[ ccm.store,{local:'http://www2.inf.fh-bonn-rhein-sieg.de/~jkarp2s/ab3/templet.json'}],
         key : 'itemtestverwaltungmitdatumundloeschen',
         store: [ccm.store,{url: 'ws://ccm2.inf.h-brs.de/index.js', store: 'itemstore' }],
-        style: [ccm.load,'http://mutex.fail/jk/style.css'],
+        style: [ccm.load,'http://www2.inf.fh-bonn-rhein-sieg.de/~jkarp2s/ab3/style.css'],
         user: [ccm.instance, 'https://kaul.inf.h-brs.de/ccm/components/user2.js'],
         icons: [ ccm.load, 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'  ],
         ui:[ ccm.load, 'http://code.jquery.com/ui/1.11.4/jquery-ui.js']
